@@ -73,22 +73,25 @@
                 <!-- Keyboard End -->
                 <!--Life Score  -->
                 <div class="flex justify-between w-1/3">
+                    <!-- Display Life -->
                     <button class="btn rounded-full bg-[#894189] text-white px-4">
                         Life
                         <img src="images/Heart.svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                       </button>
+                      <!-- display Score -->
                     <button class="btn rounded-full bg-[#360490] text-white px-4">
                         Score
                         <img src="images/Dollar.svg" alt="">
-                        <span>1</span>
+                        <span id="current-score">0</span>
                       </button>
                 </div>
             </div>
         </section>
         <!-- Playground End -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class="score flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 bg-[#ffffff33] p-4 rounded-lg">
+                <h3 class="text-3xl">Game Over !</h3>
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
                     <span>14</span>

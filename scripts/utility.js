@@ -11,6 +11,20 @@ function setBackgroundColorById(elementID){
     const element =document.getElementById(elementID);
     element.classList.add('bg-[#FFA500]');
 }
+function removeBackgroundColorById(elementID){
+    const element =document.getElementById(elementID);
+    element.classList.remove('bg-[#FFA500]');
+}
+
+// a reusable code created to get the inner vale of an element 
+function getTextElementValueById(elementID){
+    const element =document.getElementById(elementID);
+    const elementValue=element.innerText;
+    const value =parseInt(elementValue);
+    return value;
+}
+
+/* Function for generating a random alphabet */
 
 function getARandomAlphabet(){
     const alphabetString= 'abcdefghijklmnopqrstuvwxyz';
